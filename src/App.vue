@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-  <SearchSpa></SearchSpa>
+    <SearchSpa></SearchSpa>
   </div>
 </template>
 
@@ -9,6 +9,7 @@ import SearchSpa from './pages/SearchSpa.vue'
 
 export default {
   name: 'App',
+
   components: {
     SearchSpa
   }
@@ -17,8 +18,4 @@ export default {
 
 <style lang="scss">
 @import "assets/styles/main.css";
-@import "assets/styles/variables.scss";
-.app {
-  background-color: $blue;
-}
 </style>

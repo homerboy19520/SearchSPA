@@ -1,5 +1,7 @@
 export const BUTTON_CONTENT = {
-  icon: {},
+  icon: {
+    modifier: "icon",
+  },
   text: {
     exit: { modifier: "text", content: "Выйти" },
     favorites: { modifier: "text", content: "Избранное" },

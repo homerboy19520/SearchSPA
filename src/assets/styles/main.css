@@ -69,8 +69,8 @@ select {
 
 @font-face {
   font-family: 'Pt_sans';
-  src: url('~@/assets/fonts/PT-Sans/ptsans-regular.woff2') format('woff2'),
-  url('~@/assets/fonts/PT-Sans/ptsans-regular.woff') format('woff');
+  src: url('../fonts/PT-Sans/ptsans-regular.woff2') format('woff2'),
+  url('../fonts/PT-Sans/ptsans-regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
@@ -78,8 +78,8 @@ select {
 
 @font-face {
   font-family: 'Roboto';
-  src: url('~@/assets/fonts/Roboto/roboto-medium.woff2') format('woff2'),
-  url('~@/assets/fonts/Roboto/roboto-medium.woff') format('woff');
+  src: url("../fonts/Roboto/roboto-medium.woff2") format('woff2'),
+  url('../fonts/Roboto/roboto-medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
@@ -87,8 +87,8 @@ select {
 
 @font-face {
   font-family: 'Roboto';
-  src: url('~@/assets/fonts/Roboto/roboto-regular.woff2') format('woff2'),
-  url('~@/assets/fonts/Roboto/roboto-regular.woff') format('woff');
+  src: url('../fonts/Roboto/roboto-regular.woff2') format('woff2'),
+  url('../fonts/Roboto/roboto-regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }

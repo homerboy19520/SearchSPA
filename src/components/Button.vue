@@ -1,6 +1,5 @@
 <template>
-  <button class="button" :class="[`m-${modifier}`]">
-    {{ content }}
+  <button @click="onButton" class="button" :class="[`m-${modifier}`]">
     <slot></slot>
   </button>
 </template>
@@ -9,13 +8,16 @@
 export default {
   name: 'Button',
   props: {
-    content: {
-      type: String,
-    },
 
     modifier: {
       type: String,
       required: true
+    }
+  },
+
+  methods: {
+    onButton() {
+      this.$emit("onButton")
     }
   }
 }

@@ -1,19 +1,24 @@
 <template>
   <div class="search-spa">
-    <Button :modifier="BUTTON_CONTENT.primary.save.modifier"
-            :content="BUTTON_CONTENT.primary.save.content"/>
+    <Button :modifier="BUTTON_CONTENT.primary.save.modifier">{{ BUTTON_CONTENT.primary.save.content }}
+    </Button>
     <Button :modifier="BUTTON_CONTENT.primary.signIn.modifier"
-            :content="BUTTON_CONTENT.primary.signIn.content"/>
+    >{{ BUTTON_CONTENT.primary.signIn.content }}
+    </Button>
 
     <Button :modifier="BUTTON_CONTENT.text.exit.modifier"
-            :content="BUTTON_CONTENT.text.exit.content"/>
+    >{{ BUTTON_CONTENT.text.exit.content }}
+    </Button>
     <Button :modifier="BUTTON_CONTENT.text.favorites.modifier"
-            :content="BUTTON_CONTENT.text.favorites.content"/>
+    >{{ BUTTON_CONTENT.text.favorites.content }}
+    </Button>
     <Button :modifier="BUTTON_CONTENT.text.search.modifier"
-            :content="BUTTON_CONTENT.text.search.content"/>
+    >{{ BUTTON_CONTENT.text.search.content }}
+    </Button>
 
     <Button :modifier="BUTTON_CONTENT.secondary.modifier"
-            :content="BUTTON_CONTENT.secondary.content"/>
+    >{{ BUTTON_CONTENT.secondary.content }}
+    </Button>
 
     <Button :modifier="BUTTON_CONTENT.icon.modifier">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

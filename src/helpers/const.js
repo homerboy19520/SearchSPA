@@ -8,6 +8,11 @@ export const BUTTON_CONTENT = {
     search: { modifier: "text", content: "Поиск" },
   },
 
+  favorites: {
+    modifier: "favorites",
+    content: "Перейти в избранное",
+  },
+
   primary: {
     save: {
       modifier: "primary",
@@ -49,4 +54,8 @@ export const INPUT_CONTENT = {
     modifier: "search",
     placeholder: "Что хотите посмотреть?",
   },
+};
+export const TOOLTIP_CONTENT = {
+  message: "Поиск сохранён в разделе «Избранное»",
+  modifier: "tooltip",
 };

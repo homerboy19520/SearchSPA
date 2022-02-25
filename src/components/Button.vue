@@ -1,6 +1,6 @@
 <template>
   <button @click="onButton" class="button" :class="[`m-${modifier}`]">
-    <slot></slot>
+    <slot>Перейти в избранное</slot>
   </button>
 </template>
 
@@ -32,7 +32,7 @@ export default {
   background-color: transparent;
   border-color: transparent;
   cursor: pointer;
-  
+
   &.m-primary {
     min-width: 136px;
     background-color: #1390E5;
@@ -49,7 +49,8 @@ export default {
     }
   }
 
-  &.m-text {
+  &.m-text,
+  &.m-favorites {
     padding: 10px;
     color: #1390E5;
     transition: opacity .2s ease-out;
@@ -57,6 +58,10 @@ export default {
     &:hover {
       opacity: .5;
     }
+  }
+
+  &.m-favorites {
+    padding-left: 0;
   }
 
   &.m-secondary {

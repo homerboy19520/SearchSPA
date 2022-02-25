@@ -50,3 +50,17 @@ export const INPUT_CONTENT = {
     placeholder: "Что хотите посмотреть?",
   },
 };
+export const TITLE_CONTENT = {
+  signIn: {
+    modifier: "signIn",
+    content: "Вход",
+  },
+  search: {
+    modifier: "search",
+    content: "Поиск видео",
+  },
+  save: {
+    modifier: "save",
+    content: "Сохранить запрос",
+  },
+};

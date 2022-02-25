@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Tooltip from "@/components/Tooltip"
+import Tooltip from "@/components/ui/Tooltip"
 import {TOOLTIP_CONTENT} from "@/helpers/const.js"
 
 export default {

@@ -67,6 +67,10 @@ select {
   font: inherit;
 }
 
+body {
+  min-width: 320px;
+}
+
 @font-face {
   font-family: 'Pt_sans';
   src: url('../fonts/PT-Sans/PTSans-Regular.woff2') format('woff2'),

@@ -1,17 +1,31 @@
 <template>
-  <button @click="onButton" class="button" :class="[`m-${modifier}`]">
+  <button @click="onButton" class="button" :class="[`m-${modifier}`, {'m-active': active}]">
+    {{ content }}
     <slot></slot>
   </button>
 </template>
-
 <script>
+
 export default {
   name: 'Button',
+  data() {
+    return {}
+  },
   props: {
 
     modifier: {
       type: String,
       required: true
+    },
+
+    active: {
+      type: Boolean,
+      default: false
+    },
+
+    content: {
+      type: String,
+      default: ""
     }
   },
 
@@ -19,7 +33,8 @@ export default {
     onButton() {
       this.$emit("onButton")
     }
-  }
+  },
+
 }
 </script>
 
@@ -32,7 +47,7 @@ export default {
   background-color: transparent;
   border-color: transparent;
   cursor: pointer;
-  
+
   &.m-primary {
     min-width: 136px;
     background-color: #1390E5;
@@ -49,14 +64,50 @@ export default {
     }
   }
 
-  &.m-text {
-    padding: 10px;
-    color: #1390E5;
-    transition: opacity .2s ease-out;
+  &.m-text,
+  &.m-exit {
+    position: relative;
+    padding: 25px 12px;
+    color: #BEBEBE;
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    transition: color .2s ease-out, opacity .2s ease-out;
 
     &:hover {
-      opacity: .5;
+      opacity: .7;
     }
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 0;
+      height: 2px;
+      background-color: var(--color-blue);
+      transition: width .2s ease-out;
+    }
+
+    &.m-active {
+      color: #1390E5;
+
+      &:after {
+        width: 100%;
+      }
+    }
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+      padding: 26px 20px;
+    }
+  }
+
+  &.m-exit {
+    margin-left: auto;
   }
 
   &.m-secondary {

@@ -24,3 +24,29 @@ export const BUTTON_CONTENT = {
     modifier: "secondary",
   },
 };
+export const INPUT_CONTENT = {
+  login: {
+    modifier: "common",
+    placeholder: "Логин",
+    description: "Логин",
+  },
+  password: {
+    modifier: "common",
+    placeholder: "Пароль",
+    description: "Пароль",
+  },
+  request: {
+    modifier: "common",
+    placeholder: "Запрос",
+    description: "Запрос",
+  },
+  name: {
+    modifier: "common",
+    placeholder: "Укажите название",
+    description: "Название",
+  },
+  search: {
+    modifier: "search",
+    placeholder: "Что хотите посмотреть?",
+  },
+};

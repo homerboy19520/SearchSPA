@@ -32,7 +32,7 @@ export default {
   background-color: transparent;
   border-color: transparent;
   cursor: pointer;
-
+  
   &.m-primary {
     min-width: 136px;
     background-color: #1390E5;

@@ -1,52 +1,39 @@
 <template>
   <div class="search-spa">
-    <Button :modifier="BUTTON_CONTENT.primary.save.modifier">{{ BUTTON_CONTENT.primary.save.content }}
-    </Button>
-    <Button :modifier="BUTTON_CONTENT.primary.signIn.modifier"
-    >{{ BUTTON_CONTENT.primary.signIn.content }}
-    </Button>
-
-    <Button :modifier="BUTTON_CONTENT.text.exit.modifier"
-    >{{ BUTTON_CONTENT.text.exit.content }}
-    </Button>
-    <Button :modifier="BUTTON_CONTENT.text.favorites.modifier"
-    >{{ BUTTON_CONTENT.text.favorites.content }}
-    </Button>
-    <Button :modifier="BUTTON_CONTENT.text.search.modifier"
-    >{{ BUTTON_CONTENT.text.search.content }}
-    </Button>
-
-    <Button :modifier="BUTTON_CONTENT.secondary.modifier"
-    >{{ BUTTON_CONTENT.secondary.content }}
-    </Button>
-
-    <Button :modifier="BUTTON_CONTENT.icon.modifier">
+    <Input :description="INPUT_CONTENT.login.description" :placeholder="INPUT_CONTENT.login.placeholder"
+           :modifier="INPUT_CONTENT.login.modifier"></Input>
+    <Input :description="INPUT_CONTENT.password.description" :placeholder="INPUT_CONTENT.password.placeholder"
+           :modifier="INPUT_CONTENT.password.modifier">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
-            d="M20.8401 4.61012C20.3294 4.09912 19.7229 3.69376 19.0555 3.4172C18.388 3.14064 17.6726 2.99829 16.9501 2.99829C16.2276 2.99829 15.5122 3.14064 14.8448 3.4172C14.1773 3.69376 13.5709 4.09912 13.0601 4.61012L12.0001 5.67012L10.9401 4.61012C9.90843 3.57842 8.50915 2.99883 7.05012 2.99883C5.59109 2.99883 4.19181 3.57842 3.16012 4.61012C2.12843 5.64181 1.54883 7.04108 1.54883 8.50012C1.54883 9.95915 2.12843 11.3584 3.16012 12.3901L4.22012 13.4501L12.0001 21.2301L19.7801 13.4501L20.8401 12.3901C21.3511 11.8794 21.7565 11.2729 22.033 10.6055C22.3096 9.93801 22.4519 9.2226 22.4519 8.50012C22.4519 7.77763 22.3096 7.06222 22.033 6.39476C21.7565 5.7273 21.3511 5.12087 20.8401 4.61012Z"
-            fill="#C5E4F9" stroke="#1390E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            d="M14.12 14.12C13.8454 14.4148 13.5141 14.6512 13.1462 14.8151C12.7782 14.9791 12.3809 15.0673 11.9781 15.0744C11.5753 15.0815 11.1752 15.0074 10.8016 14.8565C10.4281 14.7056 10.0887 14.4811 9.80385 14.1962C9.51897 13.9113 9.29439 13.572 9.14351 13.1984C8.99262 12.8249 8.91853 12.4247 8.92563 12.0219C8.93274 11.6191 9.02091 11.2219 9.18488 10.8539C9.34884 10.4859 9.58525 10.1547 9.88 9.88003M17.94 17.94C16.2306 19.243 14.1491 19.9649 12 20C5 20 1 12 1 12C2.24389 9.68192 3.96914 7.65663 6.06 6.06003L17.94 17.94ZM9.9 4.24002C10.5883 4.0789 11.2931 3.99836 12 4.00003C19 4.00003 23 12 23 12C22.393 13.1356 21.6691 14.2048 20.84 15.19L9.9 4.24002Z"
+            stroke="#D1D1D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M1 1L23 23" stroke="#D1D1D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-
-    </Button>
+    </Input>
+    <Input :description="INPUT_CONTENT.request.description" :placeholder="INPUT_CONTENT.request.placeholder"
+           :modifier="INPUT_CONTENT.request.modifier"></Input>
+    <Input :description="INPUT_CONTENT.name.description" :placeholder="INPUT_CONTENT.name.placeholder"
+           :modifier="INPUT_CONTENT.name.modifier"></Input>
+    <Input :placeholder="INPUT_CONTENT.search.placeholder"
+           :modifier="INPUT_CONTENT.search.modifier"></Input>
   </div>
 </template>
 
 <script>
-
-import Button from "@/components/Button";
-import {BUTTON_CONTENT} from "@/helpers/const"
-
+import Input from "@/components/Input"
+import {INPUT_CONTENT} from "@/helpers/const"
 
 export default {
   name: 'SearchSpa',
 
   data() {
     return {
-      BUTTON_CONTENT
+      INPUT_CONTENT
     }
   },
 
-  components: {Button},
+  components: {Input},
 }
 </script>
 

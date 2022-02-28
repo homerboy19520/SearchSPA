@@ -1,11 +1,10 @@
 <template>
   <div class="search-spa">
-    <Title :modifier="TITLE_CONTENT.signIn.modifier" :content="TITLE_CONTENT.signIn.content"></Title>
-    <Title :modifier="TITLE_CONTENT.search.modifier" :content="TITLE_CONTENT.search.content"></Title>
-    <Title :modifier="TITLE_CONTENT.save.modifier" :content="TITLE_CONTENT.save.content"></Title>
+    <Title color="black" tag="h1" :size="18" :weight="400">Привет</Title>
+    <Title color="black" tag="h1" :size="36" :weight="400">Артур</Title>
+    <Title color="black" tag="h1" :size="18" :weight="500">Диана</Title>
   </div>
 </template>
-
 <script>
 import Title from "@/components/Title"
 import {TITLE_CONTENT} from "@/helpers/const"

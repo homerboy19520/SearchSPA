@@ -49,7 +49,7 @@ export default {
   }
 
   &.m-tooltip p {
-    font-family: Pt_sans, Helvetica, Arial, sans-serif;
+    font-family: var(--font-PT);
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;

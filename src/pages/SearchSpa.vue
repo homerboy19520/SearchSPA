@@ -1,23 +1,25 @@
 <template>
   <div class="search-spa">
-    <Tooltip :modifier="TOOLTIP_CONTENT.modifier" :message="TOOLTIP_CONTENT.message"></Tooltip>
+    <VideoCard :title="title" :subtitle="subtitle" :watches="watches"></VideoCard>
   </div>
 </template>
 
 <script>
-import Tooltip from "@/components/ui/Tooltip"
-import {TOOLTIP_CONTENT} from "@/helpers/const.js"
+
+import VideoCard from "@/components/VideoCard";
 
 export default {
   name: 'SearchSpa',
 
   data() {
     return {
-      TOOLTIP_CONTENT
+      title: "Как кормить кошку натуралкой | Перечень Как кормить кошку натуралкой | Перечень",
+      subtitle: "Ветеринария и Кормление Ветеринария и Кормление",
+      watches: "786 тыс. просмотров"
     }
   },
 
-  components: {Tooltip},
+  components: {VideoCard},
 }
 </script>
 

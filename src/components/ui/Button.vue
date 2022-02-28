@@ -28,7 +28,7 @@ export default {
 .button {
   box-sizing: border-box;
   font-weight: 400;
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--font-Roboto);
   background-color: transparent;
   border-color: transparent;
   cursor: pointer;

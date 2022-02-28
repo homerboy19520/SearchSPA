@@ -45,7 +45,7 @@ export default {
   width: 100%;
   border: 1px solid var(--color-blue);;
   outline: none;
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--font-Roboto);
 
   &.m-common,
   &.m-search {
@@ -95,7 +95,7 @@ export default {
 }
 
 .input-description {
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--font-family-roboto);
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;

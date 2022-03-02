@@ -1,19 +1,15 @@
 <template>
   <div class="app">
-    <SearchSpa></SearchSpa>
+    <router-link to="/">home</router-link>
+    <router-link to="/login">login</router-link>
+    <router-view />
   </div>
 </template>
 
 <script>
-import SearchSpa from './pages/SearchSpa.vue'
-
 export default {
-  name: 'App',
-
-  components: {
-    SearchSpa
-  }
-}
+  name: "App",
+};
 </script>
 
 <style lang="scss">
